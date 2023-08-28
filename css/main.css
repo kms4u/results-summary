@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --lightRed: hsl(0, 100%, 67%);
+    --lightRedBG: hsla(0, 100%, 67%, 0.132);
+
+    --orangeYellow: hsl(39, 100%, 56%);
+    --orangeYellowBG: hsl(39, 100%, 56%, 0.132);
+
+    --greenTeal: hsl(166, 100%, 37%);
+    --greenTealBG: hsl(166, 100%, 37%, 0.132);
+    
+    --cobaltBlue: hsl(234, 85%, 45%);
+    --cobaltBlueBG: hsl(234, 85%, 45%, 0.132);
+
+    --lightSlateBlue: hsl(252, 100%, 67%);
+    --lightRoyalBlue: hsl(241, 81%, 54%);
+
+    --violetBlue: hsla(256, 72%, 46%, 1);
+    --persianBlue: hsla(241, 72%, 46%, 0);
+
+    --white: hsl(0, 0%, 100%);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 100%, 89%);
+    --darkGrayBlue: hsl(224, 30%, 27%);
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+body {
+    font-size: 18px;
+    font-family: Hanken Grotesk;
+    font-weight: 500;
+    background-color: var(--paleBlue);
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    text-align: center;
+    color: var(--lightLavender);
+    margin: 0;
+}
+
+.card-wrapper {
+    width: 624px;
+    height: 465px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    box-shadow: 10px 10px 50px 10px var(--lightLavender);
+}
+
+.card-left {
+    width: 322px;
+    height: 465px;
+    background: linear-gradient(var(--lightSlateBlue), var(--lightRoyalBlue));
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-right {
+    width: 322px;
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.circle {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    background: linear-gradient(var(--violetBlue), var(--persianBlue));
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.circle h1 {
+    font-size: 75px;
+    color: var(--white);
+    margin: 0;
+    line-height: 80px;
+    font-weight: 800;
+}
+
+.result {
+    font-size: 22px;
+    color: var(--lightLavender);
+}
+
+.great {
+    font-size: 30px;
+    color: var(--white);
+    margin: 0;
+    font-weight: 700;
+}
+
+.card-text {
+    width: 80%;
+    margin: 0 0 10px 0;
+}
+
+.card-right p {
+    width: 80%;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 800;
+}
+
+.items-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spanRed {
+    color: var(--lightRed);
+}
+
+.spanYellow {
+    color: var(--orangeYellow);
+}
+
+.spanGreen {
+    color: var(--greenTeal);
+}
+
+.spanBlue {
+    color: var(--cobaltBlue);
+}
+
+.left-char {
+    display: flex;
+    width: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+}
+
+.left-char span {
+    margin-left: 10px;
+}
+
+.right-char {
+    display: flex;
+    width: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.right-char p {
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.right-char span {
+    color: var(--lightLavender);
+    font-weight: 700;
+    margin-left: 7px;
+}
+
+.red {
+    background-color: var(--lightRedBG);
+}
+
+.yellow {
+    background-color: var(--orangeYellowBG);
+}
+
+.green {
+    background-color: var(--greenTealBG);
+}
+
+.blue {
+    background-color: var(--cobaltBlueBG);
+}
+
+.button {
+    width: 80%;
+    height: 50px;
+    border-radius: 40px;
+    position: relative;
+    background-image: linear-gradient(var(--darkGrayBlue), var(--darkGrayBlue));
+    z-index: 1;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 40px;
+    background-image: linear-gradient(var(--lightSlateBlue), var(--lightRoyalBlue));
+    z-index: -1;
+    transition: opacity .3s linear;
+    opacity: 0;
+}
+
+.button:hover::before {
+    opacity: 1;
+}
+
+.attribution {
+    color: var(--darkGrayBlue);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.attribution a {
+    color: inherit;
+}
