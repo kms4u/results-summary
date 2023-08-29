@@ -289,6 +289,7 @@ span {
     }
     .button {
         height: 60px;
+        margin-top: 10px;
     }
     .item {
         height: 50px;
