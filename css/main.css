@@ -263,7 +263,7 @@ span {
     }
     .card-wrapper {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         flex-direction: column;
         border-radius: 0px;
         box-shadow: none;
@@ -291,7 +291,7 @@ span {
         height: 60px;
     }
     .item {
-        height: 58px;
+        height: 55px;
     }
     .circle {
         width: 150px;
