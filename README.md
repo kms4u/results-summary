@@ -45,4 +45,4 @@ the test result is calculated in the render.js file, based on the file data in d
 ## Author
 
 - Website - [Sokolov Pavel](https://kms4u.github.io/Sokolov_Web)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/kms4u)
+- Frontend Mentor - [@kms4u](https://www.frontendmentor.io/profile/kms4u)
