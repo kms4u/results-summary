@@ -18,11 +18,11 @@ function renderItems(itemsArr) {
 
         const itemHTML = `        <div class="item ${item.color}">
         <div class="left-char">
-          <img id="icon" src="${item.icon}" alt="">
-          <span class="${item.spanCol}" id="category">${item.category}</span>
+          <img src="${item.icon}" alt="">
+          <span class="${item.spanCol}">${item.category}</span>
         </div>
         <div class="right-char">
-          <p id="score">${item.score}<span>/ 100</span></p>
+          <p>${item.score}<span>/ 100</span></p>
         </div>
       </div>`;
         total += parseInt(item.score);
